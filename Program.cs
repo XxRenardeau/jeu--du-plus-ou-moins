@@ -57,7 +57,7 @@ namespace PremierTest
                 {
                     //Console.WriteLine("Le chiffre mystere est " + RandomChiffre);//frere c'est du debug si tu laisse cette ligne les gens ils vont facilement gagner 
 
-                    Console.WriteLine("Devine le nombre (entre 0 et 25)");
+                    Console.WriteLine("Devine le nombre entre 0 et" +nmbdiff);
 
                     int GuessChiffre = Convert.ToInt32(Console.ReadLine());
 

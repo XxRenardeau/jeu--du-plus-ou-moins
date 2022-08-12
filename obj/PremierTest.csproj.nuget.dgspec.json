@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\paulm\\Desktop\\Visual studio\\PremierTest\\PremierTest.csproj": {}
+    "C:\\Users\\paulm\\Desktop\\Visual studio\\PremierTest\\jeu--du-plus-ou-moins\\PremierTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\paulm\\Desktop\\Visual studio\\PremierTest\\PremierTest.csproj": {
+    "C:\\Users\\paulm\\Desktop\\Visual studio\\PremierTest\\jeu--du-plus-ou-moins\\PremierTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\paulm\\Desktop\\Visual studio\\PremierTest\\PremierTest.csproj",
+        "projectUniqueName": "C:\\Users\\paulm\\Desktop\\Visual studio\\PremierTest\\jeu--du-plus-ou-moins\\PremierTest.csproj",
         "projectName": "PremierTest",
-        "projectPath": "C:\\Users\\paulm\\Desktop\\Visual studio\\PremierTest\\PremierTest.csproj",
+        "projectPath": "C:\\Users\\paulm\\Desktop\\Visual studio\\PremierTest\\jeu--du-plus-ou-moins\\PremierTest.csproj",
         "packagesPath": "C:\\Users\\paulm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\paulm\\Desktop\\Visual studio\\PremierTest\\obj\\",
+        "outputPath": "C:\\Users\\paulm\\Desktop\\Visual studio\\PremierTest\\jeu--du-plus-ou-moins\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\paulm\\AppData\\Roaming\\NuGet\\NuGet.Config",
