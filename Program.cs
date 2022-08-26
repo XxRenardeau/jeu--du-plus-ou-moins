@@ -2,92 +2,23 @@
 
 namespace PremierTest
 {
+
     class Program
     {
+
         static void Main(string[] args)
         {
-            Console.WriteLine("**************************\n****** Jeu du + / - ******\n**************************");
-            bool gg = false;
-            Console.WriteLine("Bienvenue dans le jeu du + ou - \n veuilliez choisir votre difficulté \n tappez 1 pour facile (entre 0 et 25) \n tappez 2 pour moyen (entre 0 et 100) \n tappez 3 pour difficile (entre 0 et 1000) \n tappez 4 pour impossible (entre 0 et 1million)");
+            GameInstance instance = CreateNewGame();
             
-            int difficulte = Convert.ToInt32(Console.ReadLine());
-           
-            Range ecart=ChoixDifficulte(difficulte);
-            int RandomChiffre=Randomiseur(ecart);
-
-            if (ecart.MinRange == -1)
-            {
-                Console.WriteLine("Cette difficulté n'existe pas");
-                return;
-            }
-            else
-            {
-            
-                while (gg == false)
-                {
-                    //Console.WriteLine("Le chiffre mystere est " + RandomChiffre);//frere c'est du debug si tu laisse cette ligne les gens ils vont facilement gagner 
-
-                    Console.WriteLine("Devine le nombre entre 0 et " + ecart.MaxRange);
-
-                    int GuessChiffre = Convert.ToInt32(Console.ReadLine());
-
-                    int resultat = RandomChiffre - GuessChiffre;
-                    int zero = 0;
-
-                    if (resultat == zero)
-                    {
-                        Console.WriteLine("bien ouej chacal");
-                        gg = true;
-                    }
-                    else
-                    {
-                        if (resultat > zero) { Console.WriteLine("c'est plus"); }
-                        else { Console.WriteLine("c'est moins"); }
-
-                    }
-
-                }
-            }
-
-
         }
 
-        static Range ChoixDifficulte(int difficulte)
+
+        static GameInstance CreateNewGame()
         {
-            switch (difficulte)
-            {
-                case 1:
-                    return new Range(0, 25);
-                case 2:
-                    return new Range(0, 100);
-                case 3:
-                    return new Range(0, 1000);
-                case 4:
-                    return new Range(0, 1000000);
-                default: return new Range(-1, -1);
+            GameInstance instance = new GameInstance();
+            return instance;
 
-            }
-               
+
         }
-        static int Randomiseur(Range Range)
-        {
-            Random rnd = new Random();
-            return rnd.Next(Range.MinRange,Range.MaxRange);
-        }
-
-        struct Range
-        {
-            public Range(int MinRange, int MaxRange)
-            {
-                this.MinRange = MinRange;
-                this.MaxRange = MaxRange;
-            }
-            public int MinRange;
-            public int MaxRange;
-        }
-
-
-
     }
-
 }
